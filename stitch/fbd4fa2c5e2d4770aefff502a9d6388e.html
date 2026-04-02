@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#a40217",
+              "secondary": "#ffb3ad",
+              "on-primary": "#003824",
+              "secondary-fixed-dim": "#ffb3ad",
+              "surface-container-high": "#23293c",
+              "inverse-surface": "#dce1fb",
+              "surface-dim": "#0c1324",
+              "surface": "#0c1324",
+              "on-tertiary": "#2a313d",
+              "tertiary-fixed-dim": "#c0c7d6",
+              "outline-variant": "#3c4a42",
+              "on-surface-variant": "#bbcabf",
+              "inverse-on-surface": "#2a3043",
+              "error-container": "#93000a",
+              "error": "#ffb4ab",
+              "on-tertiary-fixed": "#151c27",
+              "surface-variant": "#2e3447",
+              "on-secondary-fixed-variant": "#930013",
+              "tertiary-fixed": "#dce2f3",
+              "secondary-fixed": "#ffdad7",
+              "tertiary": "#c0c7d6",
+              "on-primary-fixed-variant": "#005236",
+              "on-primary-fixed": "#002113",
+              "on-secondary-fixed": "#410004",
+              "primary-container": "#10b981",
+              "surface-container-lowest": "#070d1f",
+              "on-error-container": "#ffdad6",
+              "surface-container-low": "#151b2d",
+              "primary": "#4edea3",
+              "on-background": "#dce1fb",
+              "on-error": "#690005",
+              "on-secondary-container": "#ffaea8",
+              "background": "#0c1324",
+              "outline": "#86948a",
+              "on-primary-container": "#00422b",
+              "inverse-primary": "#006c49",
+              "surface-container": "#191f31",
+              "primary-fixed-dim": "#4edea3",
+              "surface-container-highest": "#2e3447",
+              "tertiary-container": "#9ca3b2",
+              "surface-tint": "#4edea3",
+              "on-tertiary-container": "#323946",
+              "primary-fixed": "#6ffbbe",
+              "on-secondary": "#68000a",
+              "on-tertiary-fixed-variant": "#404754",
+              "on-surface": "#dce1fb",
+              "surface-bright": "#33394c"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .kinetic-blur {
+        backdrop-filter: blur(24px);
+      }
+      body {
+        background-color: #0c1324;
+        color: #dce1fb;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/70 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border-none">
+<nav class="flex justify-between items-center h-20 px-8 max-w-full">
+<div class="flex items-center gap-3">
+<span class="text-sm font-black tracking-[0.3em] text-emerald-500 dark:text-emerald-400 font-['Space_Grotesk'] uppercase">KINETIC_COUNT</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-emerald-400 dark:text-emerald-300 transition-colors duration-300" href="#">SAYAÇ</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-400 transition-colors duration-300" href="#">İSTATİSTİKLER</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-slate-500 dark:text-slate-400 hover:text-emerald-400 transition-colors duration-300" href="#">SİSTEM</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform duration-200 text-slate-500 hover:text-emerald-400">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="active:scale-95 transition-transform duration-200 text-slate-500 hover:text-emerald-400">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-40 px-6 max-w-4xl mx-auto flex flex-col items-center">
+<!-- Live Data Stream Indicator -->
+<div class="flex items-center gap-3 mb-12 px-4 py-2 rounded-full bg-surface-container-low border border-outline-variant/10">
+<div class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</div>
+<span class="font-label text-[10px] tracking-[0.2em] font-bold text-emerald-500/80">CANLI VERİ AKIŞI</span>
+</div>
+<!-- The Monolith Counter Unit -->
+<section class="relative w-full aspect-square md:aspect-video flex flex-col items-center justify-center bg-surface-container-low rounded-xl overflow-hidden mb-12 group transition-all duration-500 hover:bg-surface-container">
+<!-- Subtle Grid Pattern Background -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#4edea3_1px,transparent_1px)] [background-size:20px_20px]"></div>
+<div class="relative flex flex-col items-center">
+<span class="font-label text-[0.75rem] tracking-[0.2em] text-on-surface-variant/40 mb-2 uppercase">GÜNCEL SAYIM</span>
+<h1 class="font-headline text-[10rem] md:text-[14rem] leading-none font-bold tracking-tighter text-on-surface selection:bg-primary selection:text-on-primary">12</h1>
+<div class="flex items-center gap-4 mt-4">
+<div class="h-[1px] w-8 bg-outline-variant/30"></div>
+<span class="font-label text-[0.65rem] tracking-[0.3em] text-primary uppercase">SABİT_BAĞLANTI</span>
+<div class="h-[1px] w-8 bg-outline-variant/30"></div>
+</div>
+</div>
+</section>
+<!-- Kinetic Triggers (Action Buttons) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+<!-- Decrement -->
+<button class="relative h-24 flex items-center justify-center bg-surface-container-high rounded-xl group overflow-hidden active:scale-[0.98] transition-all">
+<div class="absolute inset-0 bg-secondary-container/0 group-hover:bg-secondary-container/10 transition-colors"></div>
+<div class="flex flex-col items-center gap-1 z-10">
+<span class="material-symbols-outlined text-secondary text-3xl">remove</span>
+<span class="font-label text-[0.7rem] tracking-[0.1em] text-secondary/60 font-semibold uppercase">AZALT</span>
+</div>
+</button>
+<!-- Reset -->
+<button class="relative h-24 flex items-center justify-center bg-surface-container-highest rounded-xl group overflow-hidden active:scale-[0.98] transition-all">
+<div class="absolute inset-0 bg-slate-500/0 group-hover:bg-slate-500/10 transition-colors"></div>
+<div class="flex flex-col items-center gap-1 z-10">
+<span class="material-symbols-outlined text-tertiary text-3xl">restart_alt</span>
+<span class="font-label text-[0.7rem] tracking-[0.1em] text-tertiary font-semibold uppercase">SIFIRLA</span>
+</div>
+</button>
+<!-- Increment -->
+<button class="relative h-24 flex items-center justify-center bg-gradient-to-br from-primary to-primary-container rounded-xl group overflow-hidden active:scale-[0.98] transition-all shadow-[0_0_40px_rgba(78,222,163,0.1)]">
+<div class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors"></div>
+<div class="flex flex-col items-center gap-1 z-10">
+<span class="material-symbols-outlined text-on-primary-container text-4xl font-bold">add</span>
+<span class="font-label text-[0.7rem] tracking-[0.1em] text-on-primary-container font-black uppercase">ARTIR</span>
+</div>
+</button>
+</div>
+<!-- Sub-panel Stats (Asymmetric Layout) -->
+<div class="w-full grid grid-cols-2 gap-4 mt-12">
+<div class="bg-surface-container-lowest p-6 rounded-xl flex items-start justify-between">
+<div>
+<span class="font-label text-[0.6rem] tracking-[0.2em] text-on-surface-variant/40 uppercase block mb-1">OTURUM SÜRESİ</span>
+<span class="font-headline text-2xl font-medium text-on-surface">01:24:42</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/20">schedule</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl flex items-start justify-between">
+<div>
+<span class="font-label text-[0.6rem] tracking-[0.2em] text-on-surface-variant/40 uppercase block mb-1">SİNYAL GÜCÜ</span>
+<div class="flex items-end gap-1 h-6 pt-2">
+<div class="w-1.5 h-1/4 bg-primary rounded-full"></div>
+<div class="w-1.5 h-2/4 bg-primary rounded-full"></div>
+<div class="w-1.5 h-3/4 bg-primary rounded-full"></div>
+<div class="w-1.5 h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<span class="font-headline text-lg font-bold text-primary">-%42 dBm</span>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 w-full bg-slate-950 border-none">
+<div class="flex justify-between items-center px-10 py-6 w-full">
+<div class="flex items-center gap-6">
+<span class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-medium text-emerald-500 uppercase">SYSTEM_ACTIVE</span>
+<span class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-medium text-slate-600 dark:text-slate-500">STABLE_BUILD_V2</span>
+</div>
+<div class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] font-medium text-slate-600 dark:text-slate-500 opacity-70 hover:opacity-100 transition-opacity uppercase">
+                © 2024 SAYAC-V2 // TACTICAL PRECISION
+            </div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only Responsive Pivot) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-slate-950/90 backdrop-blur-xl border-t border-outline-variant/10 flex justify-around items-center px-4 z-[60]">
+<button class="flex flex-col items-center gap-1 text-emerald-400">
+<span class="material-symbols-outlined">speed</span>
+<span class="text-[9px] font-label font-bold tracking-widest">SAYAÇ</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-[9px] font-label font-bold tracking-widest">VERİ</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined">terminal</span>
+<span class="text-[9px] font-label font-bold tracking-widest">SİSTEM</span>
+</button>
+</div>
+</body></html>

@@ -1,0 +1,680 @@
+{
+  "generatedAt": "2026-04-01T22:04:34.635Z",
+  "screenCount": 3,
+  "screens": {
+    "d02291e8ec9445668a1ea479ef2ca540": {
+      "screenId": "d02291e8ec9445668a1ea479ef2ca540",
+      "sections": [
+        {
+          "tag": "header",
+          "classes": [
+            "bg-slate-950/70",
+            "backdrop-blur-2xl",
+            "fixed",
+            "top-0",
+            "w-full",
+            "z-50",
+            "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+            "bg-slate-900/40",
+            "border-none"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "pt-20",
+            "pb-32",
+            "px-6"
+          ],
+          "childCount": 13
+        },
+        {
+          "tag": "footer",
+          "classes": [
+            "bg-slate-950",
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "border-none",
+            "bg-slate-900/50"
+          ],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "history",
+          "classes": [
+            "text-slate-500",
+            "dark:text-slate-400",
+            "hover:text-emerald-400",
+            "transition-colors",
+            "duration-300",
+            "active:scale-95",
+            "transition-transform",
+            "duration-200"
+          ],
+          "icon": "history",
+          "action": "click-action"
+        },
+        {
+          "label": "settings",
+          "classes": [
+            "text-slate-500",
+            "dark:text-slate-400",
+            "hover:text-emerald-400",
+            "transition-colors",
+            "duration-300",
+            "active:scale-95",
+            "transition-transform",
+            "duration-200"
+          ],
+          "icon": "settings",
+          "action": "click-action"
+        },
+        {
+          "label": "remove",
+          "classes": [
+            "w-16",
+            "h-16",
+            "rounded-full",
+            "bg-secondary-container",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-secondary-container",
+            "shadow-lg",
+            "active:scale-90",
+            "transition-all",
+            "duration-200",
+            "opacity-50",
+            "cursor-not-allowed"
+          ],
+          "icon": "remove",
+          "action": "click-action"
+        },
+        {
+          "label": "refresh",
+          "classes": [
+            "group",
+            "w-14",
+            "h-14",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-tertiary",
+            "hover:bg-surface-variant",
+            "transition-all",
+            "duration-300",
+            "active:scale-95"
+          ],
+          "icon": "refresh",
+          "action": "click-action"
+        },
+        {
+          "label": "add",
+          "classes": [
+            "w-20",
+            "h-20",
+            "rounded-full",
+            "bg-gradient-to-br",
+            "from-primary",
+            "to-primary-container",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-primary",
+            "shadow-[0_0_40px_-5px_rgba(78,222,163,0.3)]",
+            "active:scale-95",
+            "transition-all",
+            "duration-200"
+          ],
+          "icon": "add",
+          "action": "create"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "SYSTEM_ACTIVE",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "text-[10px]",
+            "tracking-[0.2em]",
+            "font-medium",
+            "text-slate-600",
+            "dark:text-slate-500",
+            "hover:text-slate-200",
+            "transition-opacity",
+            "uppercase"
+          ],
+          "icon": null
+        },
+        {
+          "label": "STABLE_BUILD_V2",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "text-[10px]",
+            "tracking-[0.2em]",
+            "font-medium",
+            "text-slate-600",
+            "dark:text-slate-500",
+            "hover:text-slate-200",
+            "transition-opacity",
+            "uppercase",
+            "border-l",
+            "border-slate-800",
+            "pl-8"
+          ],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "history",
+        "settings",
+        "token",
+        "remove",
+        "refresh",
+        "add"
+      ],
+      "images": [],
+      "cssVars": {},
+      "fonts": [
+        "Space Grotesk",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 3,
+        "flexDirection": "col",
+        "gap": "6"
+      },
+      "tabBar": [
+        {
+          "label": "SYSTEM_ACTIVE",
+          "icon": null,
+          "active": true
+        },
+        {
+          "label": "STABLE_BUILD_V2",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Boş Durum (0)"
+    },
+    "dc4249190a5c4f6fa7d1e6e6da3d3fe9": {
+      "screenId": "dc4249190a5c4f6fa7d1e6e6da3d3fe9",
+      "sections": [
+        {
+          "tag": "header",
+          "classes": [
+            "bg-slate-950/70",
+            "backdrop-blur-2xl",
+            "fixed",
+            "top-0",
+            "w-full",
+            "z-50",
+            "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+            "border-none"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "classes": [
+            "min-h-screen",
+            "flex",
+            "items-center",
+            "justify-center",
+            "pt-20",
+            "pb-24",
+            "px-6",
+            "relative",
+            "overflow-hidden"
+          ],
+          "childCount": 22
+        },
+        {
+          "tag": "footer",
+          "classes": [
+            "bg-slate-950",
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "border-none",
+            "z-50"
+          ],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "history",
+          "classes": [
+            "text-slate-500",
+            "dark:text-slate-400",
+            "hover:text-emerald-400",
+            "transition-colors",
+            "duration-300",
+            "active:scale-95",
+            "transition-transform",
+            "duration-200"
+          ],
+          "icon": "history",
+          "action": "click-action"
+        },
+        {
+          "label": "settings",
+          "classes": [
+            "text-slate-500",
+            "dark:text-slate-400",
+            "hover:text-emerald-400",
+            "transition-colors",
+            "duration-300",
+            "active:scale-95",
+            "transition-transform",
+            "duration-200"
+          ],
+          "icon": "settings",
+          "action": "click-action"
+        },
+        {
+          "label": "SAYFAYI YENİLE\nrefresh",
+          "classes": [
+            "group",
+            "relative",
+            "inline-flex",
+            "items-center",
+            "gap-3",
+            "px-8",
+            "py-4",
+            "bg-gradient-to-br",
+            "from-secondary-container",
+            "to-[#7e0212]",
+            "hover:to-secondary-container",
+            "text-white",
+            "rounded-full",
+            "transition-all",
+            "duration-300",
+            "active:scale-95",
+            "shadow-[0_10px_30px_rgba(164,2,23,0.3)]"
+          ],
+          "icon": "refresh",
+          "action": "create"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "DESTEK DOKÜMANTASYONUNU GÖRÜNTÜLE\nnorth_east",
+          "href": "#",
+          "classes": [
+            "inline-flex",
+            "items-center",
+            "gap-2",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "text-xs",
+            "font-label",
+            "tracking-wide"
+          ],
+          "icon": "north_east"
+        },
+        {
+          "label": "SYSTEM_ACTIVE",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "text-[10px]",
+            "tracking-[0.2em]",
+            "font-medium",
+            "text-slate-600",
+            "dark:text-slate-500",
+            "hover:text-slate-200",
+            "transition-opacity",
+            "opacity-70",
+            "hover:opacity-100"
+          ],
+          "icon": null
+        },
+        {
+          "label": "STABLE_BUILD_V2",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "text-[10px]",
+            "tracking-[0.2em]",
+            "font-medium",
+            "text-slate-600",
+            "dark:text-slate-500",
+            "hover:text-slate-200",
+            "transition-opacity",
+            "opacity-70",
+            "hover:opacity-100"
+          ],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "history",
+        "settings",
+        "warning",
+        "database_off",
+        "refresh",
+        "help",
+        "verified_user",
+        "north_east"
+      ],
+      "images": [],
+      "cssVars": {},
+      "fonts": [
+        "Space Grotesk",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "6"
+      },
+      "tabBar": [
+        {
+          "label": "SYSTEM_ACTIVE",
+          "icon": null,
+          "active": true
+        },
+        {
+          "label": "STABLE_BUILD_V2",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Hata Durumu (Erişim Engellendi)"
+    },
+    "fbd4fa2c5e2d4770aefff502a9d6388e": {
+      "screenId": "fbd4fa2c5e2d4770aefff502a9d6388e",
+      "sections": [
+        {
+          "tag": "header",
+          "classes": [
+            "fixed",
+            "top-0",
+            "w-full",
+            "z-50",
+            "bg-slate-950/70",
+            "backdrop-blur-2xl",
+            "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+            "border-none"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "classes": [
+            "pt-32",
+            "pb-40",
+            "px-6",
+            "max-w-4xl",
+            "mx-auto",
+            "flex",
+            "flex-col",
+            "items-center"
+          ],
+          "childCount": 25
+        },
+        {
+          "tag": "footer",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "bg-slate-950",
+            "border-none"
+          ],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "history",
+          "classes": [
+            "active:scale-95",
+            "transition-transform",
+            "duration-200",
+            "text-slate-500",
+            "hover:text-emerald-400"
+          ],
+          "icon": "history",
+          "action": "click-action"
+        },
+        {
+          "label": "settings",
+          "classes": [
+            "active:scale-95",
+            "transition-transform",
+            "duration-200",
+            "text-slate-500",
+            "hover:text-emerald-400"
+          ],
+          "icon": "settings",
+          "action": "click-action"
+        },
+        {
+          "label": "remove\nAZALT",
+          "classes": [
+            "relative",
+            "h-24",
+            "flex",
+            "items-center",
+            "justify-center",
+            "bg-surface-container-high",
+            "rounded-xl",
+            "group",
+            "overflow-hidden",
+            "active:scale-[0.98]",
+            "transition-all"
+          ],
+          "icon": "remove",
+          "action": "click-action"
+        },
+        {
+          "label": "restart_alt\nSIFIRLA",
+          "classes": [
+            "relative",
+            "h-24",
+            "flex",
+            "items-center",
+            "justify-center",
+            "bg-surface-container-highest",
+            "rounded-xl",
+            "group",
+            "overflow-hidden",
+            "active:scale-[0.98]",
+            "transition-all"
+          ],
+          "icon": "restart_alt",
+          "action": "click-action"
+        },
+        {
+          "label": "add\nARTIR",
+          "classes": [
+            "relative",
+            "h-24",
+            "flex",
+            "items-center",
+            "justify-center",
+            "bg-gradient-to-br",
+            "from-primary",
+            "to-primary-container",
+            "rounded-xl",
+            "group",
+            "overflow-hidden",
+            "active:scale-[0.98]",
+            "transition-all",
+            "shadow-[0_0_40px_rgba(78,222,163,0.1)]"
+          ],
+          "icon": "add",
+          "action": "create"
+        },
+        {
+          "label": "speed\nSAYAÇ",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "gap-1",
+            "text-emerald-400"
+          ],
+          "icon": "speed",
+          "action": "click-action"
+        },
+        {
+          "label": "analytics\nVERİ",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "gap-1",
+            "text-slate-500"
+          ],
+          "icon": "analytics",
+          "action": "click-action"
+        },
+        {
+          "label": "terminal\nSİSTEM",
+          "classes": [
+            "flex",
+            "flex-col",
+            "items-center",
+            "gap-1",
+            "text-slate-500"
+          ],
+          "icon": "terminal",
+          "action": "click-action"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "SAYAÇ",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "tracking-tighter",
+            "uppercase",
+            "text-emerald-400",
+            "dark:text-emerald-300",
+            "transition-colors",
+            "duration-300"
+          ],
+          "icon": null
+        },
+        {
+          "label": "İSTATİSTİKLER",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "tracking-tighter",
+            "uppercase",
+            "text-slate-500",
+            "dark:text-slate-400",
+            "hover:text-emerald-400",
+            "transition-colors",
+            "duration-300"
+          ],
+          "icon": null
+        },
+        {
+          "label": "SİSTEM",
+          "href": "#",
+          "classes": [
+            "font-['Space_Grotesk']",
+            "tracking-tighter",
+            "uppercase",
+            "text-slate-500",
+            "dark:text-slate-400",
+            "hover:text-emerald-400",
+            "transition-colors",
+            "duration-300"
+          ],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "history",
+        "settings",
+        "remove",
+        "restart_alt",
+        "add",
+        "schedule",
+        "speed",
+        "analytics",
+        "terminal"
+      ],
+      "images": [],
+      "cssVars": {},
+      "fonts": [
+        "Space Grotesk",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "tabBar": [
+        {
+          "label": "KINETIC_COUNT",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "SAYAÇ",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "İSTATİSTİKLER",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "SİSTEM",
+          "icon": null,
+          "active": false
+        },
+        {
+          "label": "history",
+          "icon": "history",
+          "active": true
+        },
+        {
+          "label": "settings",
+          "icon": "settings",
+          "active": true
+        },
+        {
+          "label": "STABLE_BUILD_V2",
+          "icon": null,
+          "active": true
+        }
+      ],
+      "title": "Ana Sayaç (Aktif)"
+    }
+  }
+}

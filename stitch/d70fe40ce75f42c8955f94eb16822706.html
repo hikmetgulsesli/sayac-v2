@@ -1,0 +1,41 @@
+# sayac-v2 — Ürün Gereksinim Dokümanı
+
+## 1. Genel Bakış
+- **Proje Adı:** sayac-v2
+- **Platform:** Web (SPA)
+- **Tipoloji:** Minimal utility uygulaması
+- **Özet:** Tek sayfalık basit bir sayaç uygulaması. Artır, azalt ve sıfırla aksiyonları ile sayı değerini yönetir. Değer tarayıcıda localStorage ile kalıcı olarak saklanır.
+- **Hedef Kullanıcı:** Günlük kullanım için basit sayaç ihtiyacı olan herkes.
+
+## 2. Hedef Platform
+- **Platform:** Web (mobil uyumlu responsive tasarım)
+- **Tarayıcı Desteği:** Chrome, Firefox, Safari, Edge (son 2 versiyon)
+- **Hedef Cihaz:** Masaüstü ve mobil (telefon, tablet)
+
+## 3. Fonksiyonel Gereksinimler
+### 3.1 Temel Özellikler
+- **Sayaç Değeri Gösterimi:** Sayı değeri büyük font ile ekran ortasında görüntülenir.
+- **Artır Butonu:** Sayaç değerini +1 artırır.
+- **Azalt Butonu:** Sayaç değerini -1 azaltır.
+- **Sıfırla Butonu:** Sayaç değerini 0'a getirir.
+- **Kalıcı Depolama:** localStorage kullanımı.
+- **Başlangıç Değeri:** localStorage veya 0.
+
+## 5. UI/UX Gereksinimleri
+- **Tema:** Koyu tema (dark mode)
+- **Tasarım Dili:** Minimal, sade
+- **Renk Paleti:**
+  - Arka plan: slate-950 (#020617)
+  - Kart/Surface: slate-800 (#1e293b)
+  - Birincil (Artır): green-500 (#22c55e)
+  - Hata (Azalt): red-500 (#ef4444)
+  - Yardımcı (Sıfırla): gray-500 (#6b7280)
+  - Metin: beyaz (#ffffff)
+- **Tipografi:** 
+  - Sayaç değeri: 6xl-8xl bold beyaz
+  - Font ailesi: Space Grotesk (başlık), Inter (gövde)
+
+## 11. Ekranlar (Screens)
+1. **Ana Sayaç**: Aktif kullanım ekranı.
+2. **Boş Durum (0)**: Başlangıç state'i.
+3. **Hata Durumu**: localStorage erişim hatası.
